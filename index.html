@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="searchInput">
+            <input type="text" placeholder="Enter City Name" id="searchInput" value="New York"/>
+            <button id="searchButton">Search</button>
+
+        </div>
+       
+        <div class="weatherDetails">
+            <div class="weatherIcon">
+                <img src="https://raw.githubusercontent.com/InCoderWeb/Create-a-Weather-App-with-HTML-CSS-and-JavaScript/master/Images/Clouds.png" alt="Clouds" id="weatherIcon">
+            </div>
+            <div class="cityDetails">
+                <div class="weather" id="weather"></div>
+                <div class="desc"></div>
+            </div>
+            <div class="windDetails">
+                <div class="humidityBox">
+                    <img src="https://github.com/InCoderWeb/Create-a-Weather-App-with-HTML-CSS-and-JavaScript/blob/master/Images/thermometer.png?raw=true" alt="Humidity">
+                    <div><p class="humidity"></p><span>Humidity</span></div>
+                </div>
+                <div class="windSpeed">
+                    <img src="https://github.com/InCoderWeb/Create-a-Weather-App-with-HTML-CSS-and-JavaScript/blob/master/Images/wind.png?raw=true" alt="Wind Speed">
+                    <div><p id="windSpeed"></p><span>Wind Speed</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
